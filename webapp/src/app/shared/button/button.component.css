@@ -1,0 +1,95 @@
+/*
+ *Copyright 2018 T Mobile, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); You may not use
+ * this file except in compliance with the License. A copy of the License is located at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * or in the "license" file accompanying this file. This file is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or
+ * implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.policy-bottom-button button.app-button {
+    /*background-color: transparent !important;*/
+}
+.app-button{
+    /*border: 1px solid #ed0074;*/
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 100px;
+    background-color: #ed0074;
+    color: #fff;
+    display: inline-block;
+    padding: 0.2em 1em;
+    letter-spacing: .1em;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    min-height: 1.8em;
+    min-width: 10em;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.white-button.app-button {
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    padding:0;
+    letter-spacing: .1em;
+    background:none;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+   color: #c20064;
+}
+.voilation-button.app-button {
+    -webkit-box-shadow: none;
+   box-shadow: none;
+   border-radius: 100px;
+   background-color: #5454F5;
+   color: #fff;
+   display: inline-block;
+   padding: 0.2em 1em;
+   letter-spacing: .1em;
+   font-size: 14px;
+   text-transform: capitalize;
+   cursor: pointer;
+   min-height: 1.8em;
+   min-width: 10em;
+   text-align: center;
+   -webkit-transition:all .5s ease;
+  border: 1px solid #5454f5;
+}
+
+.app-button:hover {
+    background-color: #ed0074;
+    border:1px solid #ed0074;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .32);
+}
+.white-button.app-button:hover {
+    box-shadow: none;
+    background: none;
+    
+}
+
+.app-button:active {
+    background-color: #ed0074;
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, .32);
+}
+
+.app-button.disabled {
+    background-color: #c0c0c0;
+}
+
+.app-button.disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.app-button.disabled:active {
+    box-shadow: none;
+}

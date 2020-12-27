@@ -1,0 +1,23 @@
+Parameters:
+  ResourcePrefix:
+    Type: String
+    Default: 'pacbot'
+
+Resources:
+  InstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${ResourcePrefix}_ro
+      Path: '/'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: arn:aws:iam::325960980908:root
+            Action: 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSSupportAccess
+        - arn:aws:iam::aws:policy/AmazonGuardDutyReadOnlyAccess
+        - arn:aws:iam::aws:policy/ReadOnlyAccess
+      

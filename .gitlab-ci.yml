@@ -1,0 +1,11 @@
+image: registry.gitlab.com/egalitrade/build-image:latest
+deploy:
+  script:
+    #TODO - on merge delete old stack
+    - ./ci_deploy.sh
+cleanup:
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'master'   # Execute jobs when a new commit is pushed to master branch
+    - if: $CI_MERGE_REQUEST_ID
+  script:
+    - ./ci_destroy.sh

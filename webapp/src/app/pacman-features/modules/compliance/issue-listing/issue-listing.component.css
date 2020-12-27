@@ -1,0 +1,165 @@
+/*
+ *Copyright 2018 T Mobile, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); You may not use
+ * this file except in compliance with the License. A copy of the License is located at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * or in the "license" file accompanying this file. This file is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or
+ * implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.floating-widgets-header {
+    min-height: 4em;
+    padding: 0em 1.6em;
+}
+.policy-bottom-button button.app-button {
+    background-color: transparent;
+}
+.policy-bottom-wrap {
+    background-color: #fff;
+}
+
+ .data-table-wrap{
+    border-radius: 0px;
+ }
+ .policy-table .data-table-wrap{
+    border-radius: 0px;
+}
+.overview-head {
+   font-weight: bold;
+    border-bottom: none;
+    padding-top: 0px;
+    font-size: 20px;
+}
+.policy-violation {
+    background-color: #fff;
+    margin: 0px 15px;
+    border: 1px solid #dce1e8;
+    /*margin-top: 15px;*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.floating-widgets-section {
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.floating-widgets-container {
+    overflow: hidden;
+}
+
+.floating-widgets-container:hover {
+    overflow: auto; overflow: overlay;
+}
+
+.floating-widgets-filter-wrapper {
+    padding: 0em 1.5em 1.5em;
+}
+
+.widget-wrapper {
+    min-height: 17em;
+} 
+
+.issue-listing-wrapper.admin-rights /deep/ .data-table-wrap .table-cells:nth-child(3) {
+    width: 300px;
+}
+
+.issue-listing-wrapper.admin-rights /deep/ .data-table-wrap .table-cells:nth-child(2) {
+    width: 160px;
+}
+
+.issue-listing-wrapper.admin-rights /deep/ .data-table-wrap .table-cells:nth-child(4) {
+    width: 160px;
+}
+
+.issue-listing-wrapper.admin-rights /deep/ .data-table-wrap .table-cells:nth-child(5) {
+    width: 100px;
+}
+
+
+.issue-listing-wrapper /deep/ .data-table-wrap .table-cells:nth-child(2) {
+    width: 300px;
+}
+
+.issue-listing-wrapper /deep/ .data-table-wrap .table-cells:nth-child(1) {
+    width: 160px;
+}
+
+.issue-listing-wrapper /deep/ .data-table-wrap .table-cells:nth-child(3) {
+    width: 160px;
+}
+
+.issue-listing-wrapper /deep/ .data-table-wrap .table-cells:nth-child(4) {
+    width: 100px;
+}
+
+.issue-listing-wrapper /deep/ .data-table-wrap .table-cells {
+    width: 130px;
+}
+.issue-listing-wrapper /deep/ .data-table-wrap {
+    border: 1px solid #dce1e8;
+    border-top: none;
+}
+
+.data-table-desc{
+    margin: 1em 0 0;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-left: 14px;
+    padding-bottom: 13px;
+}
+
+.bottom-wrap {
+    padding-top: 1.5em;
+}
+
+.each-button {
+    margin-left: 1em;
+} 
+.app-button{
+    border: 1px solid #5454F5;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.page-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #75757522;
+    z-index: 14;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.disabled /deep/ button {
+    background-color: #c0c0c0; 
+}
+
+.hideComponent {
+    transform: translateX(108%);
+}
+
+.table-wrapper , .table-wrapper .relative {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* css for edge browser */
+@supports (-ms-ime-align: auto) { 
+    .floating-widgets-container {
+        overflow: auto;
+    }
+}

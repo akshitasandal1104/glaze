@@ -1,0 +1,96 @@
+/*
+ *Copyright 2018 T Mobile, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); You may not use
+ * this file except in compliance with the License. A copy of the License is located at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * or in the "license" file accompanying this file. This file is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or
+ * implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.list-table-elem-name {
+    flex: 4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #262626;
+    word-break: break-word;
+    padding-right: 0.2em;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.list-table-header-values:first-child {
+    flex: 2.3;
+    text-align: left;
+}
+
+.list-table-value {
+    flex: 5;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: .95em;
+    align-items: center;
+}
+
+.list-table-value.list-table-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: .95em;
+    font-weight: 400;
+    color: #8C8C8C;
+}
+
+.list-table-each-list {
+    padding: 4px 0;
+    word-break: break-all;
+}
+
+.list-table-inner-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list-table-divider {
+    height: 100%;
+    position: absolute;
+    left: 45%;
+    top: 0px;
+}
+
+.list-table-each-list:last-of-type {
+    border: none;
+}
+
+.list-table-value-each {
+    flex: 1;
+    /* text-align: center; */
+    padding-bottom: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 2px;
+    align-self: flex-start;
+}
+
+
+.list-table-wrapper .list-table-inner-wrapper .list-table-header-cont {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.count-color {
+    color: #D4380D;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.list-table-count-each {
+    padding-bottom: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 2px;
+    align-self: flex-start;
+}
